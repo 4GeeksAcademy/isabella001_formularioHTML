@@ -24,9 +24,10 @@
             </div>
         </nav>
 
-
-        <div class="alert alert-danger" role="alert">
-            Revisa!! faltan datos.
+        <div class="container mt-3">
+            <div class="alert alert-danger" role="alert">
+                Revisa!! faltan datos.
+            </div>
         </div>
 
         <!--formulario-->
@@ -43,38 +44,49 @@
 
             <div class="col-md-4">
                 <label for="validacion3" class="form-label">Cantidad</label>
-                <input type="text" class="form-control" id="validacion2" value="Cantidad" Required>
+                <input type="text" class="form-control mt-2" id="validacion2" placeholder="$" Required>
 
             </div>
 
             <div class="row g-3">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                <div class="col-md-6">
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" class="form-control mt-2" placeholder="First name" aria-label="First name">
                 </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                <div class="col-md-6">
+                    <label for="Apellido:">Apellido:</label>
+                    <input type="text" class="form-control mt-2" placeholder="Last name" aria-label="Last name">
                 </div>
             </div>
 
             <!-- zip-->
             <div class="row g-3">
-                <div class="col-sm-7">
-                    <input type="text" class="form-control" placeholder="City" aria-label="City">
+                <div class="col-md-6">
+                    <label for="Ciudad">Ciudad:</label>
+                    <input type="text" class="form-control mt-2" placeholder="City" aria-label="City">
                 </div>
-                <div class="col-sm">
-                    <input type="text" class="form-control" placeholder="State" aria-label="State">
+                <div class="col-md-3">
+                    <label for="Estado">Estado:</label>
+                    <select class="form-select required mt-2">
+                        <option value="">Pick a state</option>
+                        <option value="1">33162</option>
+                        <option value="2">4564</option>
+                        <option value="3">55786</option>
+                    </select>
                 </div>
-                <div class="col-sm">
-                    <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                <div class="col-md-3">
+                    <label for="Codigo Postal">Codigo Postal:</label>
+                    <input type="text" class="form-control mt-2" placeholder="Zip" aria-label="Zip">
                 </div>
             </div>
 
             <!--selec de tarjeta-->
             <div class="row">
 
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-md-6">
                     <label for="Credit Card">We accept:</label>
-                    <div class="col-sm-6 bg-secondary d-fex align-content-center">
+                    <div class="col-sm-6 bg-secondary d-flex justify-content-md-around mt-2">
+
                         <div>
 
                             <div class="form-check">
@@ -113,15 +125,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-6 mt-2">
                     <label for="Credit Card">Message:</label>
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Deja tus notas aqui</label>
+                    <textarea class="form-control mt-2" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <p class="text-muted"> tus notas aqui</p>
                 </div>
             </div>
         </form>
 
-        <div class="justify-content-md-end">
+        <div class="justify-content-md-end bg-light">
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn-primary me-md-2" type="button">Enviar</button>
                 <button class="btn btn-seccondary" type="button">Cancelar</button>
